@@ -14,6 +14,7 @@ mr.findTVs(function(tv) {
 					for (var s=0; s<statuses.length; s++) {
 						var output = [
 							tv.info["device"],
+							(new Date()).toISOString(),
 							statuses[s]["title"],
 							statuses[s]["source"],
 							statuses[s]["provider"]
